@@ -76,5 +76,5 @@ def all_holidays_with_bbq(holiday_hash)
       holiday.to_s
     end
   end
-  array[:fourth_of_july, :memorial_day]
+  Array[:fourth_of_july, :memorial_day]
 end
