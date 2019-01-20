@@ -63,8 +63,9 @@ def all_supplies_in_holidays(holiday_hash)
       string = holiday_name
       if holiday_name == "new_years"
         puts "  New Years: #{supplies.join(", ")}"
+      else
+        puts "  #{holiday_name.to_s.capitalize}: #{supplies.join(", ")}"
       end
-      puts "  #{holiday_name.to_s.capitalize}: #{supplies.join(", ")}"
     end
   end
 
