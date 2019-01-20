@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |holiday_name, supplies|
       string = holiday_name
       string.to_s.gsub!(/_/, ' ')
-      puts "  #{string.capitalize}: #{supplies.join(", ")}"
+      puts "  #{holiday_name.to_s.gsub!(/_/, ' ').capitalize}: #{supplies.join(", ")}"
     end
   end
 
